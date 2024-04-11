@@ -1,0 +1,35 @@
+{
+  "keywordFileContentHash": "58381ECD8D70DD1BC69FBB8ADCF10D6A",
+  "keywordClasses": [
+    {
+      "name": "MykeyWordForWeb",
+      "keywordMethods": [
+        {
+          "name": "hello",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "helloUserr",
+          "parameters": [
+            {
+              "name": "user",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

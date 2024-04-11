@@ -12,7 +12,7 @@
    <driverClassName></driverClassName>
    <isInternalPath>false</isInternalPath>
    <password></password>
-   <query>Select * from Employee</query>
+   <query>SELECT * FROM `Login-credentials`;</query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName></sheetName>
    <user></user>

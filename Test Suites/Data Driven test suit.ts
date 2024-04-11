@@ -18,22 +18,22 @@
       <testCaseId>Test Cases/Demo/Data Driven Test case</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>ad9b2b90-8cb2-45b6-9ae9-dc81aeb3f5c5</id>
+         <id>034f2533-95f0-4501-985e-832416b1ed6e</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
             <value></value>
          </iterationEntity>
-         <testDataId>Data Files/Excel Test data</testDataId>
+         <testDataId>Data Files/DB Test data</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId>ad9b2b90-8cb2-45b6-9ae9-dc81aeb3f5c5</testDataLinkId>
+         <testDataLinkId>034f2533-95f0-4501-985e-832416b1ed6e</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>username</value>
          <variableId>bd6f7898-afca-4ba9-b574-5e15e8604655</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>ad9b2b90-8cb2-45b6-9ae9-dc81aeb3f5c5</testDataLinkId>
+         <testDataLinkId>034f2533-95f0-4501-985e-832416b1ed6e</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>password</value>
          <variableId>39408bf4-4d8c-4482-b6f0-492b84b4091b</variableId>
