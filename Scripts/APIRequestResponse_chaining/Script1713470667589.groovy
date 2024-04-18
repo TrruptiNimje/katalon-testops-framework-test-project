@@ -17,11 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WS.sendRequest(findTestObject('RestAPI/GetUser'))
+getUserResponse = WS.sendRequest(findTestObject('RestAPI/GetUser'))
 
-WS.sendRequest(findTestObject('RestAPI/UpdateUser'))
+def slurper = new groovy.json.JsonSlurper()
 
-WS.sendRequest(findTestObject('RestAPI/DeleteUser'))
+def result = slurper.parseText(getUserResponse.getResponseBodyContent())
 
-WS.sendRequest(findTestObject('RestAPI/CreatUser'))
+def value = result.data[2].first_name
+
+println " >> value is:  " +value
+
+WS.sendRequestAndVerify(findTestObject('RestAPI/UpdateUser', [('firstname') : value]))
 

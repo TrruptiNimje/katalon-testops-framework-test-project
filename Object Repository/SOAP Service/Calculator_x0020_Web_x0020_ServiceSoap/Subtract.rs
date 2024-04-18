@@ -8,7 +8,7 @@
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <autoUpdateContent>true</autoUpdateContent>
-   <connectionTimeout>-1</connectionTimeout>
+   <connectionTimeout>0</connectionTimeout>
    <followRedirects>true</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent></httpBodyContent>
@@ -30,7 +30,7 @@
       <webElementGuid>649ef3fe-da50-4ee6-9964-d546b2a7abdf</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.4.0</katalonVersion>
-   <maxResponseSize>-1</maxResponseSize>
+   <maxResponseSize>0</maxResponseSize>
    <path></path>
    <restRequestMethod></restRequestMethod>
    <restUrl></restUrl>
@@ -39,7 +39,7 @@
    &lt;soapenv:Header/>
    &lt;soapenv:Body>
       &lt;tem:Subtract>
-         &lt;tem:a>8&lt;/tem:a>
+         &lt;tem:a>${num1}&lt;/tem:a>
          &lt;tem:b>3&lt;/tem:b>
       &lt;/tem:Subtract>
    &lt;/soapenv:Body>
@@ -48,8 +48,15 @@
    <soapRequestMethod>SOAP</soapRequestMethod>
    <soapServiceEndpoint>https://ecs.syr.edu/faculty/fawcett/Handouts/cse775/code/calcWebService/Calc.asmx</soapServiceEndpoint>
    <soapServiceFunction>Subtract</soapServiceFunction>
-   <socketTimeout>-1</socketTimeout>
+   <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>false</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>'5'</defaultValue>
+      <description></description>
+      <id>2e948d65-d097-46cf-893c-50e918174c0a</id>
+      <masked>false</masked>
+      <name>num1</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -67,6 +74,7 @@ ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 WS.verifyResponseStatusCode(response, 200)
 
-assertThat(response.getStatusCode()).isEqualTo(200)</verificationScript>
+assertThat(response.getStatusCode()).isEqualTo(200)
+WS.verifyElementText(response, 'SubtractResponse.SubtractResult', '2')</verificationScript>
    <wsdlAddress>https://ecs.syr.edu/faculty/fawcett/Handouts/cse775/code/calcWebService/Calc.asmx?WSDL</wsdlAddress>
 </WebServiceRequestEntity>

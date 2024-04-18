@@ -17,11 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WS.sendRequest(findTestObject('RestAPI/GetUser'))
+addResponse = WS.sendRequest(findTestObject('SOAP Service/Calculator_x0020_Web_x0020_ServiceSoap/Add'))
 
-WS.sendRequest(findTestObject('RestAPI/UpdateUser'))
+def addResult = addResponse.responseBodyContent
 
-WS.sendRequest(findTestObject('RestAPI/DeleteUser'))
+def value = new XmlSlurper().parseText(addResult)
 
-WS.sendRequest(findTestObject('RestAPI/CreatUser'))
+println(' >> value is> ' + value)
+
+WS.sendRequestAndVerify(findTestObject('SOAP Service/Calculator_x0020_Web_x0020_ServiceSoap/Subtract', [('num1') : '5']))
 
