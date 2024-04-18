@@ -26,21 +26,21 @@
   [
     {
       "value": "Admin123",
-      "checked": true
+      "checked": false
     },
     {
       "value": "admin123",
-      "checked": true
+      "checked": false
     }
   ],
   [
     {
       "value": "adminxyz",
-      "checked": true
+      "checked": false
     },
     {
       "value": "admin1223",
-      "checked": true
+      "checked": false
     }
   ]
 ]]]></checkpoint-data>

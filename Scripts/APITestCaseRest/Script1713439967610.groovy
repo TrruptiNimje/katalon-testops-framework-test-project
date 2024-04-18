@@ -17,17 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WS.sendRequest(findTestObject('RestAPI/ListUser'))
 
-WebUI.navigateToUrl('https://opensource-demo.orangehrmlive.com/')
+WS.sendRequest(findTestObject('RestAPI/UpdateUser'))
 
-WebUI.setText(findTestObject('Page_OrangeHRM/input_Username_username'), username)
+WS.sendRequest(findTestObject('RestAPI/DeleteUser'))
 
-WebUI.setEncryptedText(findTestObject('Page_OrangeHRM/input_Password_password'), password)
-
-WebUI.click(findTestObject('Page_OrangeHRM/button_Login'))
-
-WebUI.verifyTextPresent('Dashboard', false)
-
-WebUI.closeBrowser()
+WS.sendRequest(findTestObject('RestAPI/CreatUser'))
 

@@ -17,17 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WS.sendRequest(findTestObject('SOAP Service/Calculator_x0020_Web_x0020_ServiceSoap/Add'))
 
-WebUI.navigateToUrl('https://opensource-demo.orangehrmlive.com/')
-
-WebUI.setText(findTestObject('Page_OrangeHRM/input_Username_username'), username)
-
-WebUI.setEncryptedText(findTestObject('Page_OrangeHRM/input_Password_password'), password)
-
-WebUI.click(findTestObject('Page_OrangeHRM/button_Login'))
-
-WebUI.verifyTextPresent('Dashboard', false)
-
-WebUI.closeBrowser()
+WS.sendRequest(findTestObject('SOAP Service/Calculator_x0020_Web_x0020_ServiceSoap/Subtract'))
 
