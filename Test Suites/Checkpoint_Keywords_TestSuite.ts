@@ -1,35 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>DemoTestSuit1</name>
+   <name>Checkpoint_Keywords_TestSuite</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <mailRecipient>nimje.trupti5@gmail.com;</mailRecipient>
+   <mailRecipient></mailRecipient>
    <numberOfRerun>3</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>33ea64ef-70d6-4b2d-b32c-19421d67c083</testSuiteGuid>
+   <testSuiteGuid>8f27e9d6-f821-4fba-b560-49181d9d4308</testSuiteGuid>
    <testCaseLink>
-      <guid>54d4db17-007f-4c3d-9893-6b2a2a14417f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Demo/ManualTestCase</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>8ed135e3-736e-44ec-b646-63e6caf7e00f</guid>
+      <guid>1ee5b755-30aa-4c41-991c-340aa503d5ad</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Demo/RecordAndPlayTest</testCaseId>
+      <testCaseId>Test Cases/Demo/CheckpointTestCAse</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>09af4735-915e-4e4c-8ab2-59d244a09b97</guid>
+      <guid>2fe19b33-b2f4-4628-8892-75c20fe10657</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Demo/ScriptModeTestCase</testCaseId>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Demo/KeyWordTestCase</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

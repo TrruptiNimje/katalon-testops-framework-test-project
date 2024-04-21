@@ -5,9 +5,9 @@
    <tag></tag>
    <source-info>
       <is-from-test-data>true</is-from-test-data>
-      <source-url>Data Files/Excel Test data</source-url>
+      <source-url>Data Files/Internal test data</source-url>
    </source-info>
-   <taken-date>2024-04-11T14:14:14.022+02:00</taken-date>
+   <taken-date>2024-04-21T14:03:07.48+02:00</taken-date>
    <column-names>
       <column-name>username</column-name>
       <column-name>password</column-name>
@@ -26,21 +26,21 @@
   [
     {
       "value": "Admin123",
-      "checked": false
+      "checked": true
     },
     {
-      "value": "admin123",
-      "checked": false
+      "value": "Admin",
+      "checked": true
     }
   ],
   [
     {
-      "value": "adminxyz",
-      "checked": false
+      "value": "Trups",
+      "checked": true
     },
     {
-      "value": "admin1223",
-      "checked": false
+      "value": "Trups",
+      "checked": true
     }
   ]
 ]]]></checkpoint-data>
